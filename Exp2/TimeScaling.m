@@ -17,12 +17,14 @@ time_scaled_signal = interp1(t_original, original_signal, t_scaled, 'linear');
 figure;
 subplot(2, 1, 1);
 plot(t_original, original_signal, 'b', 'LineWidth', 1.5);
+grid on;
 xlabel('Original Time');
 ylabel('Amplitude');
 title('Original Signal (sin(t))');
 
 subplot(2, 1, 2);
 plot(t_scaled, time_scaled_signal, 'r', 'LineWidth', 1.5);
+grid on;
 xlabel('Time Scaled by Factor');
 ylabel('Amplitude');
 title('Time-Scaled Signal');
