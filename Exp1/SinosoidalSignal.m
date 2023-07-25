@@ -19,7 +19,7 @@ ylabel('x(t)');
 A=10;
 f=10;
 phase = 0;
-sample=500;
+sample=200;
 t = 0:1/sample:1;
 x = A*sin(2*pi*f*t + phase);
 %phase pi/3;
