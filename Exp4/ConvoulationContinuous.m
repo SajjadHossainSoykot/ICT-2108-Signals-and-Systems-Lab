@@ -8,7 +8,7 @@ t2 = 0:0.01:2;
 t3 = 2:0.01:4;
 
 x1 = zeros(size(t1));
-x2 = ones(size(t2));
+x2 = ones(size(t2)); 
 x3 = zeros(size(t3));
 
 tx = [t1 t2 t3];
@@ -18,7 +18,8 @@ subplot(3,1,1);
 plot(tx,x,'Color','red','LineWidth',1);
 title('Input Signal');
 legend('x(\tau)');
-xlim([0 4]);
+xlim([-1 4]);
+ylim([0 1]);
 grid on;
 
 %%Impulse Response Signal....
@@ -37,7 +38,8 @@ subplot(3,1,2);
 plot(th,h,'Color','blue','LineWidth',1);
 title('Impulse Response');
 legend('h(\tau)');
-xlim([0 2]);
+xlim([-1 4]);
+ylim([0 1]);
 grid on;
 
 %%Output of the convolution.....
@@ -55,3 +57,6 @@ y = [y1 y2 y3];
 subplot(3,1,3)
 plot(t1,y1,t2,y2,t3,y3,'LineWidth',1);
 title('Convolution of the signal Output y(t)');
+xlim([-1 4]);
+ylim([0 1]);
+grid on;

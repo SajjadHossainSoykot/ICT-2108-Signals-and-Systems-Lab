@@ -15,9 +15,9 @@ ylabel('x(t)');
 
 %Discrete Time Sinosoidal Signal
 A=10;
-f=10;
+f=5;
 phase = 0;
-sample=200;
+sample=100;
 t = 0:1/sample:1;
 x = A*sin(2*pi*f*t + phase);
 %phase pi/3;
@@ -27,5 +27,5 @@ grid on;
 subplot(212);
 stem(t,x,'blue');
 title('(i) Discrete Time Sinusoidal Signal', 'color','black');
-xlabel('<---range of t --->');
-ylabel('x(t)');
+xlabel('<---range of n --->');
+ylabel('x[n]');
