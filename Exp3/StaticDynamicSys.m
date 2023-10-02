@@ -1,5 +1,4 @@
 %Define time interval and corresponding signal
-
 t1= -3:.1:0;
 x1= zeros (size (t1));
 t2= 0:.1:1;
